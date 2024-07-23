@@ -1,5 +1,6 @@
+package conjunto;
 
-public class banco {
+public class cliente {
 
     private String nome;
 
