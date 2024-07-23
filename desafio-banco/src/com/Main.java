@@ -1,6 +1,5 @@
 package com;
 
-import conjunto.banco;
 import conjunto.cliente;
 import conjunto.conta;
 import conjunto.contaCorrente;
@@ -17,10 +16,10 @@ public class Main {
         conta contaCorrente = new contaCorrente(nicole);
         conta contaPoupanca = new contaPoupanca(nicole);
 
-        contaCorrente.depositar(200.00);
+        contaCorrente.depositar(200);
 
         try {
-            contaPoupanca.sacar(100.50);
+            contaPoupanca.sacar(100);
         } catch (SaldoException e) {
             System.out.println("Sem saldo suficiente para saque");
         }
