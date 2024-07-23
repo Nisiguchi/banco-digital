@@ -3,6 +3,8 @@ public class Main {
         conta cc = new contaCorrente();
         conta poupanca = new contaPoupanca();
 
-        System.out.println(;
+        cc.imprimirinformacoes();
+        poupanca.imprimirinformacoes();
+
     }
 }
