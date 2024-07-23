@@ -1,13 +1,13 @@
 package conjunto;
-public class contaCorrente extends conta{
 
+public class contaCorrente extends conta {
     public contaCorrente(cliente cliente) {
         super(cliente);
     }
 
     @Override
-    public void imprimirinformacoes() {
+    public void imprimirInformacoes() {
         System.out.println("===extrato conta corrente===");
-        super.imprimirinformacoes();
+        super.imprimirConta();
     }
 }

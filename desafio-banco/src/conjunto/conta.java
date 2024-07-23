@@ -17,12 +17,12 @@ public abstract class conta implements iConta {
     }
 
     @Override
-    public void depositar(Double valor) {
+    public void depositar(double valor) {
         saldo += valor;
     }
 
     @Override
-    public void sacar(Double valor) throws SaldoException {
+    public void sacar(double valor) throws SaldoException {
         if (valor > saldo) {
             throw new SaldoException();
         }
@@ -31,7 +31,7 @@ public abstract class conta implements iConta {
     }
 
     @Override
-    public void transferir(Double valor, iConta contaDestino) throws SaldoException {
+    public void transferir(double valor, iConta contaDestino) throws SaldoException {
         this.sacar(valor);
 
         contaDestino.depositar(valor);

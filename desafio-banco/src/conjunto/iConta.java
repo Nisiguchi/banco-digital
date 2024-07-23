@@ -9,5 +9,5 @@ public interface iConta {
 
     void transferir(double valor, iConta contaDestino) throws SaldoException;
 
-    void imprimirinformacoes();
+    void imprimirInformacoes();
 }

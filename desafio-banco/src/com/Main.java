@@ -31,7 +31,7 @@ public class Main {
             System.out.println("Sem saldo suficiente para transferencia");
         }
 
-        contaCorrente.ìmprimirInformacoes();
-        contaPoupanca.ìmprimirInformacoes();
+        contaCorrente.imprimirInformacoes();
+        contaPoupanca.imprimirInformacoes();
     }
 }
