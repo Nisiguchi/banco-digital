@@ -21,13 +21,13 @@ public class Main {
         try {
             contaPoupanca.sacar(100);
         } catch (SaldoException e) {
-            System.out.println("Sem saldo suficiente para saque");
+            System.out.println("Sem saldo para saque");
         }
 
         try {
-            contaCorrente.transferir(150.00, contaPoupanca);
+            contaCorrente.transferir(150, contaPoupanca);
         } catch (SaldoException e) {
-            System.out.println("Sem saldo suficiente para transferencia");
+            System.out.println("Sem saldo para transferencia");
         }
 
         contaCorrente.imprimirInformacoes();

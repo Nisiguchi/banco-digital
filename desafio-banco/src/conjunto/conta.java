@@ -38,10 +38,10 @@ public abstract class conta implements iConta {
     }
 
     protected void imprimirConta() {
-        System.out.printf("Titular: %s\n", this.cliente.getNome());
-        System.out.printf("Agencia: %s\n", getAgencia());
-        System.out.printf("Numero: %s\n", getNumero());
-        System.out.printf("Saldo: %s\n", getSaldo());
+        System.out.printf("titular: %s\n", this.cliente.getNome());
+        System.out.printf("agencia: %s\n", getAgencia());
+        System.out.printf("numero: %s\n", getNumero());
+        System.out.printf("saldo: %s\n", getSaldo());
     }
 
     public Integer getAgencia() {
